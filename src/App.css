@@ -1,38 +1,136 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@700&family=Yantramanav:wght@300;400;500;900&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+main {
+  font-family: 'Yantramanav', sans-serif;
+}
+#hero {
+  background-image: url(hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 3rem;
+  min-height: 80vh;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Tinos', serif;
+  text-transform: uppercase;
+}
+
+#hero h1 {
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  text-shadow: 2px 2px #000000;
+}
+
+#hero h2{
+  font-size: 4rem;
+  letter-spacing: .8rem;
+  text-shadow: 2px 2px #000000;
+}
+
+.about {
+  background:#212121;
+  color:#fff;
+  min-height: 100vh;
+  background-image: url(about.jpg);
+  background-position: right;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+.about p {
+  font-size: 1.3rem;
+  margin-bottom:3vh;
+  width:80%;
+}
+
+#text {
+  width:30%;
+  padding:25vh 0 15vh 14%;
+}
+.about .uppercase {
+  text-transform: uppercase;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 3.5rem;
+  margin: 5vh auto;
+}
+
+.about a{
+  margin-top:1vh;
+  text-decoration: none;
+  background:#BB7043;
+  color:#212121;
+  padding:.5rem 1rem;
+}
+
+#jazz {
+  background:#BB7043;
+  min-height: 100vh;
+  color: #212121;
+}
+
+#jazz #covid {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 8vh 9rem;
+}
+
+
+#entertainment {
+  width:30%;
+}
+
+#entertainment .date {
+text-transform: uppercase;
+color:#fff;
+font-weight: 400;
+margin-top:1vh;
+}
+
+#entertainment .time {
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: 400;
+  margin-bottom:2vh;
+  
+  }
+
+
+.image {
+  background-image: url(JazzJive.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 40vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  width:50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+#cards {
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "genre": "Jazz n' Jive",
+        "date": "Every Monday",
+        "time": "9:11 PM",
+        "description": "Jazz up your Monday nights with intimate and lively performances by a rotating selection of renowned bands.",
+        "image": "../JazzJive.jpg"
+    },
+    {
+        "id": 2,
+        "genre": "Jazz n' Jive",
+        "date": "Every Monday",
+        "time": "9:11 PM",
+        "description": "Jazz up your Monday nights with intimate and lively performances by a rotating selection of renowned bands.",
+        "image": "../JazzJive.jpg"
+    },
+    {
+        "id": 3,
+        "genre": "Jazz n' Jive",
+        "date": "Every Monday",
+        "time": "9:11 PM",
+        "description": "Jazz up your Monday nights with intimate and lively performances by a rotating selection of renowned bands.",
+        "image": "../JazzJive.jpg"
+    }
+]
