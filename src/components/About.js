@@ -7,7 +7,7 @@ const About = () => {
             </p>
                 <h2>The Story of Bathtub Gin</h2>
                 <p>Gin was the predominant drink in the United States during the Prohibition-Era 1920's and many variations were created. "Bathtub gin" was developed in response to the poor-quality of alcohol that was available at the time.</p>
-                <a href="">Read More</a>
+                <button>Read More</button>
             </div>
         </section>
      );

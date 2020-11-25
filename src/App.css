@@ -67,9 +67,9 @@ main {
   margin: 5vh auto;
 }
 
-.about a{
+button{
   margin-top:1vh;
-  text-decoration: none;
+  border: none;
   background:#BB7043;
   color:#212121;
   padding:.5rem 1rem;
