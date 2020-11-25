@@ -1,17 +1,13 @@
-const Card = () => {
+const Card = (props) => {
     return ( 
         <section id="entertainment">
-            <div className="image">
-                <h3>Jazz n' Jive</h3>
+            <div className="image" style={{backgroundImage:`url(${props.bandImg})`}}>
+                <h3>{props.bandGenre}</h3>
             </div>
             <div>
-                <h4 className="date">Every Monday</h4>
-                <p className="time">9:11 PM</p>
-                <p className="description">Jazz up your Monday nights with intimate and lively performances by a rotating selection of renowned bands.</p>
-                <p>Nate Jones Band</p>
-                <p>Fleur Seule</p>
-                <p>Dandy Wellington</p>
-                <p>The Ladybugs</p>
+                <h4 className="date">{props.bandDate}</h4>
+                <p className="time">{props.bandTime}</p>
+                <p className="description">{props.bandDescription}</p>
             </div>
         </section>
      );
