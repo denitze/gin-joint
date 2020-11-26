@@ -1,7 +1,7 @@
 const Nav = () => {
     return ( 
-        <section id="navBar">
-            <nav>
+        <section>
+            <nav id="footerNav">
                 <img src="../img/Group.png" alt=""/>
                 <div>
                     <h3>Find Us</h3>

@@ -5,10 +5,40 @@
   padding:0;
 }
 
-main {
+body {
   font-family: 'Yantramanav', sans-serif;
   background:#212121;
 }
+
+/* navBar */
+#navBar {
+  padding:3vh 2%;
+
+}
+.active {
+  color:#BB7043;
+}
+#navBar ul{
+
+  display:flex;
+  justify-content: space-between;
+  list-style-type: none;
+
+}
+
+#navBar a{
+  text-decoration: none;
+  color:white;
+  font-size: 1.3rem;
+}
+
+#navBar a:hover {
+  color:#BB7043;
+}
+
+
+/* Header */
+
 #hero {
   background-image: url(../src/img/hero.jpg);
   background-position: center;
@@ -37,6 +67,8 @@ main {
   text-shadow: 2px 2px #000000;
 }
 
+/* About & Food Menu */
+
 .about {
 
   color:#fff;
@@ -46,7 +78,7 @@ main {
   background-size: 55%;
   background-repeat: no-repeat;
 }
-.about p {
+.about p, #contact p {
   font-size: 1.3rem;
   margin-bottom:3vh;
   width:70%;
@@ -56,15 +88,31 @@ main {
   background-image: url(../src/img/drinks.jpg);
 }
 
+#contact {
+  background-image: url(../src/img/contactBar.jpg);
+  color:#fff;
+  background-position: right;
+  min-height: 90vh;
+  background-size: 58%;
+  background-repeat: no-repeat;
+
+}
+
+#contactPage {
+  background:#BB7043; 
+
+}
+
 #text {
-  width:33%;
+  width:35%;
   padding:25vh 0 15vh 14%;
 }
-.about .uppercase {
+
+.uppercase {
   text-transform: uppercase;
 }
 
-.about h2 {
+h2 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 4rem;
@@ -80,6 +128,8 @@ button{
   padding:.5rem 1rem;
 }
 
+/* Jazz.js mit map und JSON Datei  */
+
 #jazz {
   background:#BB7043;
   min-height: 90vh;
@@ -92,6 +142,7 @@ button{
   padding: 8vh 9rem;
 }
 
+/* Card für Jazz.js */
 
 #entertainment {
   width:30%;
@@ -113,9 +164,7 @@ margin-top:1vh;
   
   }
 
-
 .image {
-  /* background-image: url(JazzJive.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -138,6 +187,7 @@ margin-top:1vh;
   justify-content: center;
 }
 
+/* Instacard für Instagram Section und Instagram Section */
 
 #instacard {
   width:50%;
@@ -173,15 +223,19 @@ text-transform: uppercase;
 font-weight: 300;
 }
 
-nav {
+
+/* Footer und NavFooter  */
+
+#footerNav {
   padding: 5vh 10%;
   display:grid;
   grid-template-columns: 3fr 1fr 2fr;
   text-transform: uppercase;
   color: white;
+  background:#212121;
 }
 
-nav h3 {
+#footerNav h3 {
   color:#BB7043;
   margin-bottom:1vh;
   font-weight: 400;
@@ -189,7 +243,7 @@ nav h3 {
 
 .operationHours {
   display:grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: 1.5fr 1fr;
 }
 
 footer {
@@ -198,6 +252,7 @@ footer {
   align-items: center;
   border: 0.1px solid grey;
   padding-top:5vh;
+  background:#212121;
 }
 
 
@@ -207,4 +262,95 @@ padding: 1rem;
 
 #bathtub {
   margin-right:30%;
+}
+
+#map {
+  background-image: url(../src/img/map.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#map div {
+  background: #C4C4C4;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding:3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#address {
+  font-size: 2rem;
+  color:#fff;
+  line-height: 1.9rem;
+  margin-bottom:7vh;
+}
+
+#touch{
+  display:flex;
+  justify-content: space-around;
+  padding: 15vh 0;
+}
+
+#touch form {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+}
+
+input {
+  width:100%;
+  margin-bottom: 2vh;
+  padding:.5rem;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+input[type="submit"] {
+  width:30%;
+  margin-top:2vh;
+  color:#fff;
+  background:#212121;
+  border:none;
+}
+
+textarea {
+  padding:.5rem;
+  font-family: 'Yantramanav', sans-serif;
+  width:100%;
+}
+
+#operation div {
+  color:#fff;
+  
+}
+
+#touchForm {
+  width:40%;
+}
+
+#touchContact{
+  width:40%;
+}
+
+#heroSec {
+  background-image: url(../src/img/openShop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+.comingSoon {
+  background: #BB7043;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
 }

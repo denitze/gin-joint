@@ -1,23 +1,40 @@
 import './App.css';
-import About from './components/About';
-import FoodMenu from './components/FoodMenu';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Instagram from './components/Instagram';
-import Jazz from './components/Jazz';
+
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home';
+import Contact from './components/Contact';
+import Navigation from './components/Navigation';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
+import Shop from './components/Shop';
+import Entertainment from './components/Entertainment';
+import Events from './components/Events';
 
 function App() {
   return (
-    <main>
-        <Header />
-        <About />
-        <Jazz />
-        <FoodMenu />
-        <Instagram />
-        <Nav />
-        <Footer/>
-    </main>
+    <Router>
+      <Navigation />
+      <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/entertainment" component={Entertainment} />
+      <Route path="/shop" component={Shop} />
+      <Route path="/events" component={Events} />
+      <Route path="/contact" component={Contact} />
+
+      </Switch>
+      <Nav />
+      <Footer />
+
+
+    </Router>
+
+
   );
 }
 
