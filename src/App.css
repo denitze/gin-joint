@@ -10,7 +10,7 @@ body {
   background:#212121;
 }
 
-/* navBar */
+/* navBar oben */
 #navBar {
   padding:3vh 2%;
 
@@ -37,7 +37,7 @@ body {
 }
 
 
-/* Header */
+/* Hero-Header auf HOME */
 
 #hero {
   background-image: url(../src/img/hero.jpg);
@@ -187,7 +187,7 @@ margin-top:1vh;
   justify-content: center;
 }
 
-/* Instacard für Instagram Section und Instagram Section */
+/* Instagram Section und Instacard für Instagram Section */
 
 #instacard {
   width:50%;
